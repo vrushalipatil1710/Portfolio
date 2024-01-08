@@ -1,0 +1,167 @@
+* {
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(226, 226, 226);
+}
+
+.navbar {
+  overflow: hidden;
+  background: rgb(13, 13, 13);
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 5%;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: rgb(203, 200, 200);
+}
+
+/* Add an active class to highlight the current page
+.navbar a.active {
+  color: rgb(250, 246, 246);
+} */
+
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .icon {
+  display: none;
+  color: rgb(255, 254, 254);
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive a.icon {
+    position: absolute;
+    color: rgb(255, 254, 254);
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+  background: rgb(18, 18, 18);
+}
+.body{
+  margin: 40px;
+}
+.Basic {
+  display: flex;
+  height: auto;
+  padding: 10px;
+  margin-top: 20px;
+  background:rgb(39, 39, 39);
+}
+p{
+  width: auto;
+}
+.basicsme {
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.image_one{
+  width: 200px;
+  box-shadow: grey 5px 5px 5px ;
+  margin: 10px;
+  margin-right: 20px;
+  opacity: 0.8;
+}
+h1{
+  margin-top: 50px;
+  color: rgb(246, 188, 206) ;
+  box-shadow:  rgb(249, 143, 176)  5px 5px 5px 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.Education {
+  display: flex;
+  padding: 10px;
+}
+
+.edu_info {
+  margin: 10px;
+  width: 25%;
+  padding: 10px;
+  border: 1px solid grey;
+  background:rgb(39, 39, 39);
+}
+
+.Contacts {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.con_info {
+  padding: 10px;
+  border: 1px solid grey;
+  background:rgb(39, 39, 39);
+}
+
+.Projects {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.pro_info {
+  padding: 10px;
+  border: 1px solid grey;
+  background:rgb(39, 39, 39);
+}
+
+.Skills {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.skill_info {
+  padding: 10px;
+  border: 1px solid grey;
+  background:rgb(39, 39, 39);
+}
+
+.btn {
+  box-shadow: rgb(250, 167, 193) 5px 5px 5px ;
+  padding: 10px;
+  margin: 10px;
+  background:rgb(39, 39, 39);
+}
+.fa {
+  padding: 10px;
+  width: 20px;
+  margin-left: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 70%;
+  color: black;
+  background:linear-gradient(pink,rgb(245, 230, 230))
+}
